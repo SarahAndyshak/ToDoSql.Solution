@@ -33,11 +33,13 @@ WIP. A refactored version of the To Do List created following Epicodus's coursew
 1. Clone or download this repository to your machine.
 2. Navigate to the local directory (YourPath/ProjectName.Solution/ProjectName) and create a new file "appsettings.json".
 3. Open the file in VS Code and add:
+
 `{
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
   }
 }`
+
 **IMPORTANT:** Be sure to replace your username, password, and name of your database for the fields [YOUR-USER-HERE], [YOUR-PASSWORD-HERE], AND [YOUR-DB-NAME].
 4. Create a .gitignore file and add "appsettings.json", "bin", and "obj" to the ignored file list.  
 5. Open your shell (e.g., Terminal or GitBash) and add your .gitignore file and commit it before adding any other files. 
