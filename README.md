@@ -35,9 +35,15 @@ WIP. A refactored version of the To Do List created following Epicodus's coursew
 3. Open the file in VS Code and add:
 
     `{
+      
       "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[YOUR-PASSWORD-HERE];"
+        
+        "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DB-NAME];uid=[YOUR-USER-HERE];pwd=[
+        
+        YOUR-PASSWORD-HERE];"
+      
       }
+    
     }`
 
 **IMPORTANT:** Be sure to replace your username, password, and name of your database for the fields [YOUR-USER-HERE], [YOUR-PASSWORD-HERE], AND [YOUR-DB-NAME].
