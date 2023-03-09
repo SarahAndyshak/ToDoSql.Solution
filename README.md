@@ -25,9 +25,9 @@ WIP. A refactored version of the To Do List created following Epicodus's coursew
 
 #### Install MySQL Workbench:
 * Follow the MySqlWorkbench installation instructions [here](https://www.mysql.com/products/workbench/), open MySql Workbench and select the Local 3306 server. Then select the "Administration" tab and click on "Data Import/Restore".
-* In Import Options select "Import from Self-Contained File" and click the "..." button to navigate to the file "Dump20230306.sql" in the top level of this repository.
-* Under the "Default Schema to be Imported to" select "New..." and enter schema name Dump20230306. Click "Start Import" in the bottom right.
-* Confirm the import was successful by clicking on the "Schemas" tab and seeing the Dump20230306 schema listed.
+* In Import Options select "Import from Self-Contained File" and click the "..." button to navigate to the file ending in ".sql" in the top level of this repository.
+* Under the "Default Schema to be Imported to" select "New..." and enter schema name of your choice. Click "Start Import" in the bottom right.
+* Confirm the import was successful by clicking on the "Schemas" tab and seeing the schema you created listed.
 
 #### Preliminary Project Set-up:
 1. Clone or download this repository to your machine.
@@ -42,6 +42,7 @@ WIP. A refactored version of the To Do List created following Epicodus's coursew
   ```
 
 **IMPORTANT:** Be sure to replace your username, password, and name of your database for the fields [YOUR-USER-HERE], [YOUR-PASSWORD-HERE], AND [YOUR-DB-NAME].
+
 4. Create a .gitignore file and add "appsettings.json", "bin", and "obj" to the ignored file list.  
 5. Open your shell (e.g., Terminal or GitBash) and add your .gitignore file and commit it before adding any other files. 
 6. Navigate to this project's production directory called "ToDoList". 
