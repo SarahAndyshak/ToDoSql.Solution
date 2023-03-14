@@ -31,16 +31,33 @@ namespace ToDoList.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(Item item)
+    public ActionResult Create (Item item)
     {
-      if(item.CategoryId == 0)
+      if (!ModelState.IsValid)
       {
-        return RedirectToAction("Create");
+        ViewBag.CategoryId = new SelectList(_db.Categories, "CategoryId", "Name");
+        return View(item);
       }
-      _db.Items.Add(item);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
+      else
+      {
+        _db.Items.Add(item);
+        _db.SaveChanges();
+        return RedirectToAction("Index");
+      }
     }
+
+// Replaced with code above to use built-in validation methods
+    // [HttpPost]
+    // public ActionResult Create(Item item)
+    // {
+    //   if(item.CategoryId == 0)
+    //   {
+    //     return RedirectToAction("Create");
+    //   }
+    //   _db.Items.Add(item);
+    //   _db.SaveChanges();
+    //   return RedirectToAction("Index");
+    // }
 
     public ActionResult Edit(int id)
     {
